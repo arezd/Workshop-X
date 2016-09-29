@@ -1,0 +1,831 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-29 10:42:16 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/lib/ruby/vendor_ruby/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 70ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-29 10:58:55 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/lib/ruby/vendor_ruby/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 44ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-29 11:01:43 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1467ms (Views: 1466.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-29 11:01:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-09-29 11:03:01 +0200
+  [1m[36m (104.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (113.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateShows (20160929171527)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "shows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "venue" varchar, "description" varchar, "capacity" integer, "price" integer, "image" varchar, "date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160929171527"]]
+  [1m[35m (139.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-29 19:17:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1194ms (Views: 1172.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-07388290f1f0d9adfbe4161b436d9656b345e8fac4b5378dd6c0e4f465797d15.css?body=1" for 127.0.0.1 at 2016-09-29 19:17:53 +0200
+
+
+Started GET "/assets/shows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-29 19:17:53 +0200
+
+
+Started GET "/assets/shows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-29 19:17:53 +0200
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:19:49 +0200
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.2ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:19:50 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (262.1ms)
+  Rendered shows/new.html.erb within layouts/application (425.8ms)
+Completed 200 OK in 447ms (Views: 439.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shows" for 127.0.0.1 at 2016-09-29 19:22:00 +0200
+Processing by ShowsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aK2+MeoueTF+Wp9kSdHV0euJTJz0S4iZcWyJ0TUxCQ5qmlj+9Q2g29bC7Zq+3H0SWZUwtSfKGQwTjoocfHk/gw==", "show"=>{"name"=>"Show1", "venue"=>"X-Palace", "description"=>"Best show ever", "capacity"=>"500", "price"=>"50", "image"=>" http://www.woueb.net/wp-content/uploads/2010/12/salle-de-concert-360.jpg", "date(1i)"=>"2016", "date(2i)"=>"9", "date(3i)"=>"29"}, "commit"=>"Create Show"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shows" ("name", "venue", "description", "capacity", "price", "image", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Show1"], ["venue", "X-Palace"], ["description", "Best show ever"], ["capacity", 500], ["price", 50], ["image", " http://www.woueb.net/wp-content/uploads/2010/12/salle-de-concert-360.jpg"], ["date", "2016-09-29"], ["created_at", "2016-09-29 17:22:00.280607"], ["updated_at", "2016-09-29 17:22:00.280607"]]
+  [1m[36m (164.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shows/1
+Completed 302 Found in 171ms (ActiveRecord: 165.2ms)
+
+
+Started GET "/shows/1" for 127.0.0.1 at 2016-09-29 19:22:00 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShow Load (0.2ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shows/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show1" for 127.0.0.1 at 2016-09-29 19:23:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/show1"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:22:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/content_length.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.8ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:23:43 +0200
+Processing by ShowsController#index as HTML
+  [1m[36mShow Load (0.2ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:23:57 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (6.1ms)
+  Rendered shows/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shows" for 127.0.0.1 at 2016-09-29 19:26:11 +0200
+Processing by ShowsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3WxNB/oe4+g/p5/HebmoKj5YxYNsf1dpwBnL/v9vFFjfW6vI5T06Apc/7TmOtADpjES5qr/+xvyi+8gztici1Q==", "show"=>{"name"=>"Show2", "venue"=>"Bat77", "description"=>"small comitee", "capacity"=>"10", "price"=>"0", "image"=>"http://ichef-1.bbci.co.uk/news/624/media/images/79587000/jpg/_79587495_parissaclay4.jpg", "date(1i)"=>"2016", "date(2i)"=>"9", "date(3i)"=>"29"}, "commit"=>"Create Show"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "shows" ("name", "venue", "description", "capacity", "price", "image", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Show2"], ["venue", "Bat77"], ["description", "small comitee"], ["capacity", 10], ["price", 0], ["image", "http://ichef-1.bbci.co.uk/news/624/media/images/79587000/jpg/_79587495_parissaclay4.jpg"], ["date", "2016-09-29"], ["created_at", "2016-09-29 17:26:11.077424"], ["updated_at", "2016-09-29 17:26:11.077424"]]
+  [1m[35m (410.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/shows/2
+Completed 302 Found in 416ms (ActiveRecord: 410.6ms)
+
+
+Started GET "/shows/2" for 127.0.0.1 at 2016-09-29 19:26:11 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShow Load (0.1ms)[0m  [1mSELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered shows/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:26:13 +0200
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.3ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:34:28 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (5.0ms)
+  Rendered shows/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shows" for 127.0.0.1 at 2016-09-29 19:35:00 +0200
+Processing by ShowsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MPzBq6GjCCgz2ZKdqdp1komhLZbjVQdx/GLukohlvZYyyydkvoDRwptB4GNe191RO71RvzDUluSegO1fwS2LGw==", "show"=>{"name"=>"Show3", "venue"=>"Elysee Palace", "description"=>"Diner d'état", "capacity"=>"400", "price"=>"0", "image"=>"", "date(1i)"=>"2016", "date(2i)"=>"9", "date(3i)"=>"29"}, "commit"=>"Create Show"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "shows" ("name", "venue", "description", "capacity", "price", "image", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Show3"], ["venue", "Elysee Palace"], ["description", "Diner d'état"], ["capacity", 400], ["price", 0], ["image", ""], ["date", "2016-09-29"], ["created_at", "2016-09-29 17:35:00.535047"], ["updated_at", "2016-09-29 17:35:00.535047"]]
+  [1m[36m (262.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shows/3
+Completed 302 Found in 266ms (ActiveRecord: 262.8ms)
+
+
+Started GET "/shows/3" for 127.0.0.1 at 2016-09-29 19:35:00 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShow Load (0.2ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shows/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:35:03 +0200
+Processing by ShowsController#index as HTML
+  [1m[36mShow Load (0.2ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:35:06 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (4.7ms)
+  Rendered shows/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shows" for 127.0.0.1 at 2016-09-29 19:35:33 +0200
+Processing by ShowsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LBqgcQu0faRGPHrC59ldZFGMJJx7jxhhPIM8vQzVNiUuLUa+FJekTu6kCDwQ1PWn45BYtagOifReYT9wRZ0AqA==", "show"=>{"name"=>"Show4", "venue"=>"La Villette", "description"=>"Jonglage avec de la vaiselle", "capacity"=>"1000", "price"=>"1", "image"=>"", "date(1i)"=>"2016", "date(2i)"=>"9", "date(3i)"=>"29"}, "commit"=>"Create Show"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "shows" ("name", "venue", "description", "capacity", "price", "image", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Show4"], ["venue", "La Villette"], ["description", "Jonglage avec de la vaiselle"], ["capacity", 1000], ["price", 1], ["image", ""], ["date", "2016-09-29"], ["created_at", "2016-09-29 17:35:33.745552"], ["updated_at", "2016-09-29 17:35:33.745552"]]
+  [1m[35m (256.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/shows/4
+Completed 302 Found in 261ms (ActiveRecord: 256.3ms)
+
+
+Started GET "/shows/4" for 127.0.0.1 at 2016-09-29 19:35:34 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShow Load (0.1ms)[0m  [1mSELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shows/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows/4/edit" for 127.0.0.1 at 2016-09-29 19:35:35 +0200
+Processing by ShowsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShow Load (0.1ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered shows/_form.html.erb (5.3ms)
+  Rendered shows/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows/4" for 127.0.0.1 at 2016-09-29 19:35:37 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShow Load (0.1ms)[0m  [1mSELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shows/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:35:38 +0200
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.3ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:35:40 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (4.0ms)
+  Rendered shows/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shows" for 127.0.0.1 at 2016-09-29 19:36:33 +0200
+Processing by ShowsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EEgyTSaplk4wNCVUFeRpMa06DldQxOu+D9WKVqngkYUSf9SCOYpPpJisV6ri6cHyHyZyfoNFeittN4mb4KinCA==", "show"=>{"name"=>"Robee", "venue"=>"Supaero Campus", "description"=>"DroneShow", "capacity"=>"1000", "price"=>"1", "image"=>"", "date(1i)"=>"2016", "date(2i)"=>"9", "date(3i)"=>"29"}, "commit"=>"Create Show"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "shows" ("name", "venue", "description", "capacity", "price", "image", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Robee"], ["venue", "Supaero Campus"], ["description", "DroneShow"], ["capacity", 1000], ["price", 1], ["image", ""], ["date", "2016-09-29"], ["created_at", "2016-09-29 17:36:33.708426"], ["updated_at", "2016-09-29 17:36:33.708426"]]
+  [1m[36m (213.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shows/5
+Completed 302 Found in 217ms (ActiveRecord: 214.0ms)
+
+
+Started GET "/shows/5" for 127.0.0.1 at 2016-09-29 19:36:33 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShow Load (0.1ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered shows/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:36:35 +0200
+Processing by ShowsController#index as HTML
+  [1m[36mShow Load (0.2ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:36:47 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (4.6ms)
+  Rendered shows/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:42:33 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (18.2ms)
+  Rendered shows/new.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `error_span' for #<ActionView::Helpers::FormBuilder:0x007f3704275910>):
+    20:     <div class="col-lg-10">
+    21:       <%= f.text_field :name, :class => 'form-control' %>
+    22:     </div>
+    23:     <%=f.error_span(:name) %>
+    24:   </div>
+    25:   <div class="form-group">
+    26:     <%= f.label :venue, :class => 'control-label col-lg-2' %>
+  app/views/shows/_form.html.erb:23:in `block in _app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/_form.html.erb:1:in `_app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/new.html.erb:5:in `_app_views_shows_new_html_erb___2636175337639692545_69937135319600'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/shows/" for 127.0.0.1 at 2016-09-29 19:42:37 +0200
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.2ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/arezki/Workshop-X/project/app/assets/images
+  /home/arezki/Workshop-X/project/app/assets/javascripts
+  /home/arezki/Workshop-X/project/app/assets/stylesheets
+  /home/arezki/Workshop-X/project/vendor/assets/javascripts
+  /home/arezki/Workshop-X/project/vendor/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /var/lib/gems/2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Project" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  app/assets/stylesheets/bootstrap_and_overrides.css:2
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__679100343582230584_69937135315560'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.6ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:42:44 +0200
+Processing by ShowsController#index as HTML
+  [1m[36mShow Load (0.2ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/arezki/Workshop-X/project/app/assets/images
+  /home/arezki/Workshop-X/project/app/assets/javascripts
+  /home/arezki/Workshop-X/project/app/assets/stylesheets
+  /home/arezki/Workshop-X/project/vendor/assets/javascripts
+  /home/arezki/Workshop-X/project/vendor/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /var/lib/gems/2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Project" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  app/assets/stylesheets/bootstrap_and_overrides.css:2
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__679100343582230584_69937135315560'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.2ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:42:47 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (21.6ms)
+  Rendered shows/new.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `error_span' for #<ActionView::Helpers::FormBuilder:0x007f370466c7d0>):
+    20:     <div class="col-lg-10">
+    21:       <%= f.text_field :name, :class => 'form-control' %>
+    22:     </div>
+    23:     <%=f.error_span(:name) %>
+    24:   </div>
+    25:   <div class="form-group">
+    26:     <%= f.label :venue, :class => 'control-label col-lg-2' %>
+  app/views/shows/_form.html.erb:23:in `block in _app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/_form.html.erb:1:in `_app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/new.html.erb:5:in `_app_views_shows_new_html_erb___2636175337639692545_69937135319600'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:45:11 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (15.5ms)
+  Rendered shows/new.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `error_span' for #<ActionView::Helpers::FormBuilder:0x007f371547d710>):
+    20:     <div class="col-lg-10">
+    21:       <%= f.text_field :name, :class => 'form-control' %>
+    22:     </div>
+    23:     <%=f.error_span(:name) %>
+    24:   </div>
+    25:   <div class="form-group">
+    26:     <%= f.label :venue, :class => 'control-label col-lg-2' %>
+  app/views/shows/_form.html.erb:23:in `block in _app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/_form.html.erb:1:in `_app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/new.html.erb:5:in `_app_views_shows_new_html_erb___2636175337639692545_69937135319600'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/shows/new" for 127.0.0.1 at 2016-09-29 19:45:11 +0200
+Processing by ShowsController#new as HTML
+  Rendered shows/_form.html.erb (14.1ms)
+  Rendered shows/new.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `error_span' for #<ActionView::Helpers::FormBuilder:0x007f3715d0cfc0>):
+    20:     <div class="col-lg-10">
+    21:       <%= f.text_field :name, :class => 'form-control' %>
+    22:     </div>
+    23:     <%=f.error_span(:name) %>
+    24:   </div>
+    25:   <div class="form-group">
+    26:     <%= f.label :venue, :class => 'control-label col-lg-2' %>
+  app/views/shows/_form.html.erb:23:in `block in _app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/_form.html.erb:1:in `_app_views_shows__form_html_erb__3347665761591378377_69937135138460'
+  app/views/shows/new.html.erb:5:in `_app_views_shows_new_html_erb___2636175337639692545_69937135319600'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.5ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:45:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.2ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 1851ms (Views: 1838.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-09-29 19:45:33 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:22:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/content_length.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.5ms)
+
+
+Started GET "/shows/1/edit" for 127.0.0.1 at 2016-09-29 19:45:45 +0200
+Processing by ShowsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShow Load (0.3ms)[0m  [1mSELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shows/_form.html.erb (16.2ms)
+  Rendered shows/edit.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 130ms (Views: 106.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shows/1" for 127.0.0.1 at 2016-09-29 19:45:58 +0200
+Processing by ShowsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShow Load (0.1ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shows/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 19:50:09 +0200
+Processing by ShowsController#index as HTML
+  [1m[36mShow Load (0.3ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shows" for 127.0.0.1 at 2016-09-29 20:05:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShowsController#index as HTML
+  [1m[35mShow Load (0.2ms)[0m  SELECT "shows".* FROM "shows"
+  Rendered shows/index.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 1192ms (Views: 1177.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/shows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/scaffolds.self-07388290f1f0d9adfbe4161b436d9656b345e8fac4b5378dd6c0e4f465797d15.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/shows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-09-29 20:06:00 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:22:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/content_length.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.5ms)
+
+
+Started GET "/shows.json" for 127.0.0.1 at 2016-09-29 20:06:10 +0200
+Processing by ShowsController#index as JSON
+  [1m[36mShow Load (0.2ms)[0m  [1mSELECT "shows".* FROM "shows"[0m
+  Rendered shows/_show.json.jbuilder (1.3ms)
+  Rendered shows/_show.json.jbuilder (0.4ms)
+  Rendered shows/_show.json.jbuilder (0.3ms)
+  Rendered shows/_show.json.jbuilder (0.3ms)
+  Rendered shows/_show.json.jbuilder (0.3ms)
+  Rendered shows/index.json.jbuilder (320.6ms)
+Completed 200 OK in 367ms (Views: 365.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shows/1.json" for 127.0.0.1 at 2016-09-29 20:06:28 +0200
+Processing by ShowsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mShow Load (0.3ms)[0m  SELECT  "shows".* FROM "shows" WHERE "shows"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shows/_show.json.jbuilder (0.8ms)
+  Rendered shows/show.json.jbuilder (1.9ms)
+Completed 200 OK in 58ms (Views: 46.2ms | ActiveRecord: 0.3ms)
